@@ -8,6 +8,24 @@ import { Marquee } from "@/components/Marquee";
 
 const blogs = [
   {
+    slug: "/blog/best-lounge-in-mumbai",
+    category: "Lounge & Nightlife",
+    title: "Best Lounge in Mumbai | OPA Bar & Cafe",
+    excerpt:
+      "Discover the best lounge in Mumbai for Mediterranean dining, handcrafted cocktails, live entertainment, and unforgettable nights at OPA Bar & Cafe.",
+    image: "/lounge/DSC03306.jpg",
+    tags: ["Best Lounge in Mumbai", "Handcrafted Cocktails", "Nightlife Mumbai"],
+  },
+  {
+    slug: "/blog/best-mediterranean-restaurant-andheri",
+    category: "Mediterranean Dining",
+    title: "Best Mediterranean Restaurant in Andheri | OPA Bar & Cafe",
+    excerpt:
+      "Experience authentic Mediterranean flavours at the best Mediterranean restaurant in Andheri. Enjoy Lebanese, Turkish, and Middle Eastern cuisine at OPA Bar & Cafe.",
+    image: "/food/30 TEN -08182.png",
+    tags: ["Mediterranean Restaurant Andheri", "Lebanese Restaurant Mumbai", "Turkish Restaurant Andheri"],
+  },
+  {
     slug: "/blog/best-bar-in-andheri-opa-bar-cafe",
     category: "Dining & Nightlife",
     title: "Best Bar in Andheri | Premium Dining & Cocktails at Opa",
