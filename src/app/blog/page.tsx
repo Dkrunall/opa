@@ -4,6 +4,7 @@ import { StickyActions } from "@/components/StickyActions";
 import { Footer } from "@/components/Footer";
 import { Marquee } from "@/components/Marquee";
 import { getBlogPosts } from "@/lib/blog";
+import { formatPostDate } from "@/components/PostDate";
 
 export default function BlogPage() {
   const blogs = getBlogPosts();
@@ -68,6 +69,9 @@ export default function BlogPage() {
 
                     {/* Content */}
                     <div className="p-8 space-y-4">
+                      <time dateTime={blog.date} className="block text-oasis-umber/40 text-[10px] uppercase tracking-widest font-bold">
+                        {formatPostDate(blog.date)}
+                      </time>
                       <h3 className="text-xl md:text-2xl font-stylized text-oasis-umber leading-snug group-hover:text-oasis-accent transition-colors duration-300">
                         {blog.title}
                       </h3>

@@ -3,6 +3,8 @@ import { Navbar } from "@/components/Navbar";
 import { StickyActions } from "@/components/StickyActions";
 import { Footer } from "@/components/Footer";
 import { Marquee } from "@/components/Marquee";
+import { PostDate } from "@/components/PostDate";
+import post from "./post.json";
 
 export const metadata: Metadata = {
   title: "Mediterranean Food Restaurant in Andheri | Opa Bar and Cafe",
@@ -90,6 +92,7 @@ export default function BlogMediterraneanPage() {
             <span className="bg-white/10 border border-white/20 text-sand-light/70 text-[9px] uppercase tracking-widest font-bold px-4 py-2 rounded-full">
               Mediterranean · Lebanese · Arabian
             </span>
+            <PostDate date={post.date} />
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-stylized text-sand-light leading-tight tracking-tight">
             Discover the Flavours of <br className="hidden md:block" /> the Mediterranean at <br className="hidden md:block" /> Opa Bar and Cafe
