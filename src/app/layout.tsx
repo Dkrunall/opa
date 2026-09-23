@@ -31,7 +31,7 @@ const organizationSchema = {
   "@type": "Organization",
   "name": "Opa! Bar & Cafe",
   "url": "https://opabarandcafe.in/",
-  "logo": "https://opabarandcafe.in/wp-content/uploads/2024/09/Design-PNGS_OPA-Logo-Brown.png",
+  "logo": "https://opabarandcafe.in/logo.png",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "081049 61636",
