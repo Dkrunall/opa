@@ -1,69 +1,13 @@
-"use client";
-
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { StickyActions } from "@/components/StickyActions";
 import { Footer } from "@/components/Footer";
 import { Marquee } from "@/components/Marquee";
-
-const blogs = [
-  {
-    slug: "/blog/best-lounge-in-mumbai",
-    category: "Lounge & Nightlife",
-    title: "Best Lounge in Mumbai | OPA Bar & Cafe",
-    excerpt:
-      "Discover the best lounge in Mumbai for Mediterranean dining, handcrafted cocktails, live entertainment, and unforgettable nights at OPA Bar & Cafe.",
-    image: "/lounge/DSC03306.jpg",
-    tags: ["Best Lounge in Mumbai", "Handcrafted Cocktails", "Nightlife Mumbai"],
-  },
-  {
-    slug: "/blog/best-mediterranean-restaurant-andheri",
-    category: "Mediterranean Dining",
-    title: "Best Mediterranean Restaurant in Andheri | OPA Bar & Cafe",
-    excerpt:
-      "Experience authentic Mediterranean flavours at the best Mediterranean restaurant in Andheri. Enjoy Lebanese, Turkish, and Middle Eastern cuisine at OPA Bar & Cafe.",
-    image: "/food/30 TEN -08182.png",
-    tags: ["Mediterranean Restaurant Andheri", "Lebanese Restaurant Mumbai", "Turkish Restaurant Andheri"],
-  },
-  {
-    slug: "/blog/best-bar-in-andheri-opa-bar-cafe",
-    category: "Dining & Nightlife",
-    title: "Best Bar in Andheri | Premium Dining & Cocktails at Opa",
-    excerpt:
-      "Discover the best bar in Andheri at Opa Bar & Cafe. Enjoy signature cocktails, premium dining, vibrant ambiance, and unforgettable experiences.",
-    image: "/lounge/DSC03299.jpg",
-    tags: ["Best Bar in Andheri", "Premium Dining", "Cocktails Andheri"],
-  },
-  {
-    slug: "/blog/bar-and-restaurant-in-andheri-east",
-    category: "Dining & Bar",
-    title: "Bar and Restaurant in Andheri East | Opa Bar & Cafe",
-    excerpt:
-      "Discover Opa Bar & Cafe, a premium bar and restaurant in Andheri East near Mumbai Airport, known for dining, cocktails, nightlife, and celebrations.",
-    image: "/cafe/DSC03327.jpg",
-    tags: ["Bar & Restaurant Andheri East", "Near Airport Mumbai", "Party Places"],
-  },
-  {
-    slug: "/blog/best-bar-in-andheri",
-    category: "Nightlife",
-    title: "Best Bar in Andheri for Nightlife",
-    excerpt:
-      "Looking for the best bar in Andheri? OPA Bar & Cafe is Andheri East's most iconic nightlife destination — LIT cocktails, live music, and open till late night.",
-    image: "/lounge/DSC03303.jpg",
-    tags: ["Best Bar in Andheri", "Pubs in Andheri East", "Nightlife Mumbai"],
-  },
-  {
-    slug: "/blog/mediterranean-food-restaurant-in-andheri",
-    category: "Dining",
-    title: "Mediterranean Food Restaurant in Andheri",
-    excerpt:
-      "Discover authentic Lebanese, Arabian, and Mediterranean cuisine at OPA Bar & Cafe — the best Mediterranean food restaurant in Andheri East, Mumbai.",
-    image: "/food/30 TEN --2.png",
-    tags: ["Mediterranean Restaurant", "Best Lebanese Restaurant", "Arabic Food Andheri"],
-  },
-];
+import { getBlogPosts } from "@/lib/blog";
 
 export default function BlogPage() {
+  const blogs = getBlogPosts();
+
   return (
     <main className="min-h-screen bg-sand-light selection:bg-oasis-umber selection:text-sand-light">
       <Navbar />
