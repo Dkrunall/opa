@@ -4,7 +4,6 @@ import Script from "next/script";
 import "./globals.css";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { CustomCursor } from "@/components/CustomCursor";
-import { Preloader } from "@/components/Preloader";
 import { BookingProvider } from "@/components/BookingContext";
 import { BookingModal } from "@/components/BookingModal";
 
@@ -95,7 +94,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
         <BookingProvider>
           <div className="grainy-overlay" />
-          <Preloader />
           {/* <CustomCursor /> */}
           <BookingModal />
           <SmoothScroll>{children}</SmoothScroll>
