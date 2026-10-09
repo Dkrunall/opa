@@ -49,7 +49,7 @@ export function DualExperience() {
             className="relative group rounded-[2rem] md:rounded-[2.5rem] overflow-hidden min-h-[420px] md:min-h-[580px] lg:min-h-[640px] cursor-pointer"
           >
             <img
-              src="/food/30 TEN -08232.png"
+              src="/food/30 TEN -08232.webp"
               alt="Fine Dining at OPA"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2.5s] group-hover:scale-105"
             />

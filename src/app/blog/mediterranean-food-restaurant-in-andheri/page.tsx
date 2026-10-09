@@ -79,7 +79,7 @@ export default function BlogMediterraneanPage() {
       {/* Hero */}
       <section className="relative min-h-[70vh] flex items-end pb-20 md:pb-28 overflow-hidden bg-oasis-umber">
         <img
-          src="/food/30 TEN --2.png"
+          src="/food/30 TEN --2.webp"
           alt="Mediterranean Food Restaurant in Andheri — OPA Bar & Cafe Lebanese Arabic Cuisine"
           className="absolute inset-0 w-full h-full object-cover opacity-45"
         />

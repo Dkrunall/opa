@@ -117,6 +117,7 @@ export function BookingModal() {
                 </div>
                 <button
                   onClick={closeModal}
+                  aria-label="Close"
                   className="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-sand-light/50 hover:text-sand-light transition-colors"
                 >
                   <X size={18} />

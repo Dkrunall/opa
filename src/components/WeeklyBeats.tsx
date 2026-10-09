@@ -272,6 +272,7 @@ export function WeeklyBeats() {
         <div className="flex gap-6 order-1 md:order-2">
           <button
             onClick={() => slide(-1)}
+            aria-label="Previous event"
             disabled={activeIdx === 0}
             className="w-14 h-14 rounded-full border border-white/5 flex items-center justify-center text-sand-light/30 hover:border-oasis-gold/50 hover:text-oasis-gold disabled:opacity-10 transition-all duration-500 bg-white/2"
           >
@@ -279,6 +280,7 @@ export function WeeklyBeats() {
           </button>
           <button
             onClick={() => slide(1)}
+            aria-label="Next event"
             disabled={activeIdx === events.length - 1}
             className="w-14 h-14 rounded-full border border-white/5 flex items-center justify-center text-sand-light/30 hover:border-oasis-gold/50 hover:text-oasis-gold disabled:opacity-10 transition-all duration-500 bg-white/2"
           >

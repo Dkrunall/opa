@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { Instagram } from "lucide-react";
 
 const instagramPhotos = [
-  "/food/30 TEN -08223.png",
+  "/food/30 TEN -08223.webp",
   "/lounge/DSC03273.jpg",
   "/cafe/DSC03218.jpg",
-  "/food/30 TEN -08192.png",
+  "/food/30 TEN -08192.webp",
   "/lounge/DSC03339.jpg",
   "/cafe/DSC03321.jpg",
 ];

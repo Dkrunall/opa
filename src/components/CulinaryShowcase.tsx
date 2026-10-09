@@ -23,7 +23,7 @@ export function CulinaryShowcase() {
             className="lg:col-span-5 relative rounded-[2.5rem] overflow-hidden aspect-[4/5] shadow-2xl bg-oasis-umber group"
           >
             <img
-              src="/food/30 TEN -08241.png"
+              src="/food/30 TEN -08241.webp"
               alt="OPA Culinary Masterpieces"
               className="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-[1.5s] ease-[0.22, 1, 0.36, 1]"
             />

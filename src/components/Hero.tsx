@@ -84,9 +84,9 @@ export function Hero() {
         <div className="mb-6 md:mb-12 invisible h-8 md:h-16 lg:h-24" aria-hidden="true" />
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
+          initial={{ scale: 0.95 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
           className="space-y-6"
         >
           <h1 className="text-4xl md:text-8xl font-stylized text-sand-light tracking-[0.4em] mb-4 drop-shadow-2xl">

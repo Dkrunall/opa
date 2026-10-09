@@ -77,6 +77,8 @@ export function Navbar() {
           <button
             className="lg:hidden w-12 h-12 flex items-center justify-center text-sand-light bg-oasis-umber/40 rounded-full backdrop-blur-xl"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
           >
             {isOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -96,6 +98,7 @@ export function Navbar() {
               <button 
                 className="absolute top-12 right-12 text-oasis-accent p-2"
                 onClick={() => setIsOpen(false)}
+                aria-label="Close menu"
               >
                 <X size={32} />
               </button>

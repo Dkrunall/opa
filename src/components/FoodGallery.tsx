@@ -5,26 +5,26 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
 
 const foodImages = [
-  "30 TEN --2.png",
-  "30 TEN --3.png",
-  "30 TEN --4.png",
-  "30 TEN -.png",
-  "30 TEN -08098.png",
-  "30 TEN -08110.png",
-  "30 TEN -08164.png",
-  "30 TEN -08176.png",
-  "30 TEN -08182.png",
-  "30 TEN -08192.png",
-  "30 TEN -08195.png",
-  "30 TEN -08200.png",
-  "30 TEN -08213.png",
-  "30 TEN -08223.png",
-  "30 TEN -08232.png",
-  "30 TEN -08241.png",
-  "30 TEN -08245.png",
-  "30 TEN -08247.png",
-  "30 TEN -08251.png",
-  "30 TEN -08256.png"
+  "30 TEN --2.webp",
+  "30 TEN --3.webp",
+  "30 TEN --4.webp",
+  "30 TEN -.webp",
+  "30 TEN -08098.webp",
+  "30 TEN -08110.webp",
+  "30 TEN -08164.webp",
+  "30 TEN -08176.webp",
+  "30 TEN -08182.webp",
+  "30 TEN -08192.webp",
+  "30 TEN -08195.webp",
+  "30 TEN -08200.webp",
+  "30 TEN -08213.webp",
+  "30 TEN -08223.webp",
+  "30 TEN -08232.webp",
+  "30 TEN -08241.webp",
+  "30 TEN -08245.webp",
+  "30 TEN -08247.webp",
+  "30 TEN -08251.webp",
+  "30 TEN -08256.webp"
 ];
 
 export function FoodGallery() {
@@ -86,6 +86,7 @@ export function FoodGallery() {
             {/* Nav Arrows */}
             <button 
               onClick={handlePrev}
+              aria-label="Previous image"
               className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full border border-sand-light/10 bg-white/5 backdrop-blur-md flex items-center justify-center text-sand-light hover:text-oasis-gold hover:border-oasis-gold/40 hover:bg-white/10 transition-all duration-300 shadow-lg cursor-pointer"
             >
               <ChevronLeft size={20} />
@@ -93,6 +94,7 @@ export function FoodGallery() {
             
             <button 
               onClick={handleNext}
+              aria-label="Next image"
               className="absolute -right-4 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full border border-sand-light/10 bg-white/5 backdrop-blur-md flex items-center justify-center text-sand-light hover:text-oasis-gold hover:border-oasis-gold/40 hover:bg-white/10 transition-all duration-300 shadow-lg cursor-pointer"
             >
               <ChevronRight size={20} />
@@ -191,6 +193,7 @@ export function FoodGallery() {
               <button
                 key={img}
                 onClick={() => handleThumbnailClick(idx)}
+                aria-label={`View image ${idx + 1}`}
                 className={`snap-center shrink-0 w-24 h-18 md:w-32 md:h-24 rounded-2xl p-1 bg-white/[0.01] border transition-all duration-500 overflow-hidden outline-none ${
                   activeIndex === idx 
                     ? "border-oasis-gold bg-white/10 scale-105 shadow-[0_0_20px_rgba(212,175,55,0.15)]" 

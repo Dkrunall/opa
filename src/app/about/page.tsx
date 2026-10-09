@@ -231,7 +231,7 @@ export default function AboutPage() {
               className="order-1 md:order-2 relative rounded-[3rem] overflow-hidden aspect-[4/5] shadow-2xl"
             >
               <img
-                src="/food/30 TEN --2.png"
+                src="/food/30 TEN --2.webp"
                 alt="Mediterranean Lebanese Arabic Turkish Food Restaurant Andheri East Mumbai"
                 className="w-full h-full object-cover"
               />

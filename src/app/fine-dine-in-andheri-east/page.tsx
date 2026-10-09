@@ -63,7 +63,7 @@ export default function FineDinePage() {
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-end pb-20 md:pb-32 overflow-hidden bg-oasis-umber">
         <Image
-          src="/food/30 TEN -08232.png"
+          src="/food/30 TEN -08232.webp"
           alt="Best Mediterranean Lebanese Arabic Restaurant Andheri East Mumbai — OPA Bar & Cafe Fine Dine"
           fill
           priority
