@@ -16,8 +16,8 @@ export default function BlogPage() {
 
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-end pb-20 md:pb-32 overflow-hidden bg-oasis-umber">
-        <img
-          src="/lounge/DSC03299.jpg"
+        <img loading="lazy" decoding="async"
+          src="/lounge/DSC03299.webp"
           alt="OPA Bar & Cafe Blog — Andheri East Mumbai"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
@@ -56,7 +56,7 @@ export default function BlogPage() {
                   <article className="border border-oasis-umber/10 rounded-[2rem] overflow-hidden hover:border-oasis-accent/30 hover:shadow-xl transition-all duration-500">
                     {/* Image */}
                     <div className="relative aspect-[16/9] overflow-hidden">
-                      <img
+                      <img loading="lazy" decoding="async"
                         src={blog.image}
                         alt={blog.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"

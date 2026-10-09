@@ -30,7 +30,7 @@ export function Introduction() {
         style={{ y: palmY }}
         className="absolute -right-20 top-40 w-96 h-96 opacity-10 pointer-events-none"
       >
-        <img src="/lounge/DSC03258.jpg" alt="" className="w-full h-full object-cover rounded-full mix-blend-multiply filter blur-3xl" />
+        <img loading="lazy" decoding="async" src="/lounge/DSC03258.webp" alt="" className="w-full h-full object-cover rounded-full mix-blend-multiply filter blur-3xl" />
       </motion.div>
 
       <div className="container mx-auto px-6 relative z-10">

@@ -35,7 +35,7 @@ const events = [
     dj: "DJ OPA",
     time: "10 PM – 1:30 AM",
     tag: "Signature Night",
-    image: "/images/dj.png",
+    image: "/images/dj.webp",
     color: "#D4AF37",
   },
   {
@@ -154,7 +154,7 @@ export function WeeklyBeats() {
               transition={{ duration: 0.6, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
               {/* Bg image */}
-              <img
+              <img loading="lazy" decoding="async"
                 src={event.image}
                 alt={event.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"

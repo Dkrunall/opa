@@ -85,7 +85,7 @@ export default function BlogBestMediterraneanRestaurantAndheriPage() {
 
         {/* Hero */}
         <section className="relative min-h-[70vh] flex items-end pb-20 md:pb-28 overflow-hidden bg-oasis-umber">
-          <img
+          <img loading="lazy" decoding="async"
             src="/food/30 TEN -08182.webp"
             alt="Best Mediterranean Restaurant in Andheri — OPA Bar & Cafe"
             className="absolute inset-0 w-full h-full object-cover opacity-45"

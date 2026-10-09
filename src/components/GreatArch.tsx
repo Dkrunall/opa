@@ -12,13 +12,13 @@ export function GreatArch() {
           transition={{ duration: 1 }}
           className="relative aspect-video overflow-hidden rounded-t-full border-8 border-white shadow-2xl"
         >
-          <img src="/images/arch.png" alt="Oasis Portal" className="w-full h-full object-cover" />
+          <img loading="lazy" decoding="async" src="/images/arch.webp" alt="Oasis Portal" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/10 hover:bg-transparent transition-all duration-700" />
         </motion.div>
         
         <div className="text-center mt-12 space-y-4">
           <h2 className="text-2xl font-stylized text-oasis-umber tracking-[0.5em]">The Oasis Sanctuary</h2>
-          <p className="text-xs uppercase tracking-[0.3em] text-oasis-accent">Step into the Mediterranean Odyssey</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-oasis-accent-dark">Step into the Mediterranean Odyssey</p>
         </div>
       </div>
     </section>

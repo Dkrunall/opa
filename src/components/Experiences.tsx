@@ -9,14 +9,14 @@ const experiences = [
     title: "Fine Dine",
     subtitle: "CULINARY MASTERY",
     description: "Immerse yourself in a Mediterranean symphony of flavors, where every dish tells a story of sun-drenched coasts and spice-laden markets.",
-    image: "/images/food.png",
+    image: "/images/food.webp",
   },
   {
     id: "night-life",
     title: "Night Life",
     subtitle: "THE AFTER DARK",
     description: "When the moon rises, Opa transforms. Experience the ultimate fusion of world-class beats and an electric Arabic atmosphere.",
-    image: "/images/dj.png",
+    image: "/images/dj.webp",
   }
 ];
 
@@ -53,7 +53,7 @@ export function Experiences() {
               transition={{ duration: 0.8 }}
               className="absolute inset-0"
             >
-              <img src={activeTab.image} alt={activeTab.title} className="w-full h-full object-cover" />
+              <img loading="lazy" decoding="async" src={activeTab.image} alt={activeTab.title} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-oasis-umber/90 via-oasis-umber/20 to-transparent" />
             </motion.div>
           </AnimatePresence>

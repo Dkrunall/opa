@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
@@ -10,6 +10,18 @@ gsap.registerPlugin(ScrollTrigger);
 export function Hero() {
   const containerRef = useRef<HTMLElement>(null);
   const bgRef = useRef<HTMLDivElement>(null);
+  const [loadVideo, setLoadVideo] = useState(false);
+
+  // Defer the background video until the page has finished loading so it never competes with first paint
+  useEffect(() => {
+    if (document.readyState === "complete") {
+      setLoadVideo(true);
+      return;
+    }
+    const onLoad = () => setLoadVideo(true);
+    window.addEventListener("load", onLoad);
+    return () => window.removeEventListener("load", onLoad);
+  }, []);
   
   // Mouse perspective effect
   const mouseX = useMotionValue(0);
@@ -62,9 +74,10 @@ export function Hero() {
           muted
           playsInline
           preload="none"
+          poster="/hero-poster.webp"
           className="w-full h-full object-cover"
         >
-          <source src="/opa-web.mp4" type="video/mp4" />
+          {loadVideo && <source src="/opa-hero.mp4" type="video/mp4" />}
         </video>
         <div className="absolute inset-0 bg-black/30"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-sand-light"></div>
@@ -76,7 +89,7 @@ export function Hero() {
         style={{ y: y2 }}
         className="absolute -bottom-20 -left-20 w-[40vw] aspect-square z-20 pointer-events-none opacity-20 grayscale"
       >
-         <img src="/images/ambience.webp" className="w-full h-full object-cover rounded-full mix-blend-multiply blur-3xl" alt="" />
+         <img loading="lazy" decoding="async" src="/images/ambience.webp" className="w-full h-full object-cover rounded-full mix-blend-multiply blur-3xl" alt="" />
       </motion.div>
 
       {/* Hero Content */}

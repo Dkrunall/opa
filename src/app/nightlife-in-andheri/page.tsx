@@ -66,7 +66,7 @@ export default function NightlifePage() {
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-end pb-20 md:pb-32 overflow-hidden bg-black">
         <Image
-          src="/lounge/DSC03303.jpg"
+          src="/lounge/DSC03303.webp"
           alt="Best Nightlife in Andheri East Mumbai — OPA Bar & Cafe Open Till Late Night"
           fill
           priority

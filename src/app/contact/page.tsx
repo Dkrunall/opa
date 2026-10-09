@@ -64,7 +64,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-end pb-20 md:pb-32 overflow-hidden bg-oasis-umber">
         <Image
-          src="/lounge/DSC03299.jpg"
+          src="/lounge/DSC03299.webp"
           alt="OPA Bar & Cafe — Bar and Restaurant in Andheri East Mumbai Near Sakinaka"
           fill
           priority

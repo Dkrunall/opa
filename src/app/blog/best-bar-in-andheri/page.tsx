@@ -78,8 +78,8 @@ export default function BlogBestBarPage() {
 
       {/* Hero */}
       <section className="relative min-h-[70vh] flex items-end pb-20 md:pb-28 overflow-hidden bg-oasis-umber">
-        <img
-          src="/lounge/DSC03303.jpg"
+        <img loading="lazy" decoding="async"
+          src="/lounge/DSC03303.webp"
           alt="Best Bar in Andheri for Nightlife — OPA Bar & Cafe Andheri East Mumbai"
           className="absolute inset-0 w-full h-full object-cover opacity-45"
         />

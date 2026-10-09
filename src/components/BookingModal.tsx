@@ -130,7 +130,7 @@ export function BookingModal() {
                 {/* Left — info panel */}
                 <div className="md:col-span-2 px-8 md:px-12 py-10 border-r border-white/8 flex flex-col justify-between gap-10">
                   <div className="space-y-8">
-                    <img src="/logo.png" alt="OPA" className="h-14 w-auto object-contain brightness-0 invert opacity-60" />
+                    <img loading="lazy" decoding="async" src="/logo.png" alt="OPA" className="h-14 w-auto object-contain brightness-0 invert opacity-60" />
                     <p className="text-sand-light/40 text-sm leading-relaxed font-sans normal-case tracking-normal">
                       Experience the warmth of Mediterranean hospitality. Our team will confirm your reservation within 30 minutes.
                     </p>
@@ -148,7 +148,7 @@ export function BookingModal() {
                     </div>
                   </div>
                   <div className="hidden md:block">
-                    <img src="/images/food_real.webp" alt="Opa food" className="w-full h-40 object-cover rounded-2xl opacity-40" />
+                    <img loading="lazy" decoding="async" src="/images/food_real.webp" alt="Opa food" className="w-full h-40 object-cover rounded-2xl opacity-40" />
                   </div>
                 </div>
 

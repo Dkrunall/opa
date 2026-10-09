@@ -200,7 +200,7 @@ export function FoodGallery() {
                     : "border-white/5 hover:border-white/20 hover:bg-white/5"
                 }`}
               >
-                <img
+                <img loading="lazy" decoding="async"
                   src={`/food/${img}`}
                   alt=""
                   className="w-full h-full object-cover rounded-xl select-none pointer-events-none"

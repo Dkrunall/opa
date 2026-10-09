@@ -17,15 +17,15 @@ export function IconicVenue() {
             {/* Left: Brand Narrative */}
             <div className="space-y-10">
               <div className="space-y-4">
-                <span className="text-oasis-accent text-[10px] uppercase tracking-[0.8em] font-bold block">
+                <span className="text-oasis-accent-dark text-[10px] uppercase tracking-[0.8em] font-bold block">
                   Andheri East · Sakinaka · Mumbai
                 </span>
                 <h2 className="text-4xl md:text-6xl font-stylized text-oasis-umber leading-tight tracking-tight">
-                  Andheri East's <br /> Most <span className="text-oasis-accent">Iconic</span> Venue
+                  Andheri East's <br /> Most <span className="text-oasis-accent-dark">Iconic</span> Venue
                 </h2>
               </div>
 
-              <div className="space-y-6 text-oasis-umber/60 text-base md:text-lg leading-relaxed font-light">
+              <div className="space-y-6 text-oasis-umber/80 text-base md:text-lg leading-relaxed font-light">
                 <p>
                   OPA Bar & Café — the finest <strong className="text-oasis-umber/90 font-medium italic">bar and restaurant in Andheri East</strong> — brings together elevated Middle Eastern dining, signature cocktails, <strong className="text-oasis-umber/90 font-medium italic">rooftop cafe in Andheri</strong> ambience, and immersive nightlife in the heart of Andheri East. Celebrated as the <strong className="text-oasis-umber/90 font-medium italic">best bar in Andheri</strong> and the most <strong className="text-oasis-umber/90 font-medium italic">aesthetic cafe in Andheri East</strong>, OPA is your ultimate after-dark sanctuary.
                 </p>
@@ -34,7 +34,7 @@ export function IconicVenue() {
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-3 text-[9px] uppercase tracking-[0.3em] text-oasis-accent font-bold opacity-70">
+              <div className="flex flex-wrap gap-3 text-[9px] uppercase tracking-[0.3em] text-oasis-accent-dark font-bold">
                 <span>Mediterranean Food Restaurant</span>
                 <span className="opacity-30">•</span>
                 <span>Lebanese</span>

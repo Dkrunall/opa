@@ -10,7 +10,7 @@ const venues = [
     size: "large",
     feature: "Curated Comfort",
     icon: <Users size={16} />,
-    image: "/lounge/DSC03257.jpg"
+    image: "/lounge/DSC03257.webp"
   },
   {
     name: "Main Bar",
@@ -26,7 +26,7 @@ const venues = [
     size: "wide",
     feature: "Sun-Drenched Flavors",
     icon: <Coffee size={16} />,
-    image: "/cafe/DSC03208.jpg"
+    image: "/cafe/DSC03208.webp"
   }
 ];
 
@@ -54,7 +54,7 @@ export function TheSpaces() {
               `}
             >
               {/* Background with Zoom */}
-              <img 
+              <img loading="lazy" decoding="async" 
                 src={venue.image} 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110 opacity-60 grayscale hover:grayscale-0 transition-all"
                 alt={venue.name}

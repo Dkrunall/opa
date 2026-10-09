@@ -76,8 +76,8 @@ export default function BlogBestBarOpaPage() {
 
         {/* Hero */}
         <section className="relative min-h-[70vh] flex items-end pb-20 md:pb-28 overflow-hidden bg-oasis-umber">
-          <img
-            src="/lounge/DSC03299.jpg"
+          <img loading="lazy" decoding="async"
+            src="/lounge/DSC03299.webp"
             alt="Best Bar in Andheri — OPA Bar & Cafe Premium Dining & Cocktails"
             className="absolute inset-0 w-full h-full object-cover opacity-45"
           />

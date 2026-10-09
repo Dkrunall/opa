@@ -76,8 +76,8 @@ export default function BlogBarRestaurantAndheriEastPage() {
 
         {/* Hero */}
         <section className="relative min-h-[70vh] flex items-end pb-20 md:pb-28 overflow-hidden bg-oasis-umber">
-          <img
-            src="/cafe/DSC03327.jpg"
+          <img loading="lazy" decoding="async"
+            src="/cafe/DSC03327.webp"
             alt="Bar and Restaurant in Andheri East — OPA Bar & Cafe Near Mumbai Airport"
             className="absolute inset-0 w-full h-full object-cover opacity-45"
           />

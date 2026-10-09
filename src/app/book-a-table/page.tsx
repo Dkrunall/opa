@@ -84,8 +84,8 @@ export default function BookATablePage() {
       <section className="relative min-h-[85vh] flex items-end pb-20 md:pb-32 overflow-hidden bg-oasis-umber">
         <div className="absolute inset-0 bg-gradient-to-t from-oasis-umber via-oasis-umber/60 to-transparent z-10" />
         <div className="absolute inset-0">
-             <img 
-               src="/lounge/DSC03299.jpg" 
+             <img loading="lazy" decoding="async" 
+               src="/lounge/DSC03299.webp" 
                className="w-full h-full object-cover opacity-50" 
                alt="Book a Table at OPA" 
                onError={(e) => {
@@ -116,7 +116,7 @@ export default function BookATablePage() {
                <div className="absolute -top-24 -left-24 w-64 h-64 bg-oasis-gold/10 rounded-full blur-[80px]" />
                
                <div className="space-y-10 relative z-10">
-                 <img src="/logo.png" alt="OPA" className="h-12 w-auto object-contain brightness-0 invert opacity-80" />
+                 <img loading="lazy" decoding="async" src="/logo.png" alt="OPA" className="h-12 w-auto object-contain brightness-0 invert opacity-80" />
                  <div className="space-y-4">
                     <h2 className="text-3xl font-stylized text-sand-light leading-tight">Join Us At <br /> The Oasis</h2>
                     <p className="text-sand-light/40 text-sm leading-relaxed font-light">
@@ -142,8 +142,8 @@ export default function BookATablePage() {
                </div>
 
                <div className="relative rounded-2xl overflow-hidden aspect-video opacity-40">
-                  <img 
-                    src="/lounge/DSC03298.jpg" 
+                  <img loading="lazy" decoding="async" 
+                    src="/lounge/DSC03298.webp" 
                     alt="OPA Food" 
                     className="w-full h-full object-cover" 
                     onError={(e) => {

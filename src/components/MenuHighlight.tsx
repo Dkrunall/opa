@@ -42,7 +42,7 @@ export function MenuHighlight() {
       <div className="flex h-full items-center">
         {menuItems.map((item, index) => (
           <div key={index} className="menu-card flex-shrink-0 w-[400px] md:w-[600px] h-[70vh] mx-10 relative group">
-            <img 
+            <img loading="lazy" decoding="async" 
               src={item.image} 
               alt={item.name} 
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"

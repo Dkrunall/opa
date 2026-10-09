@@ -17,7 +17,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-end pb-20 md:pb-32 overflow-hidden bg-oasis-umber">
         <Image
-          src="/lounge/DSC03299.jpg"
+          src="/lounge/DSC03299.webp"
           alt="OPA Bar & Cafe — Best Bar and Cafe in Andheri East Mumbai"
           fill
           priority
@@ -54,8 +54,8 @@ export default function AboutPage() {
               transition={{ duration: 1 }}
               className="relative rounded-[3rem] overflow-hidden aspect-[4/5] shadow-2xl"
             >
-              <img
-                src="/cafe/DSC03327.jpg"
+              <img loading="lazy" decoding="async"
+                src="/cafe/DSC03327.webp"
                 alt="OPA Mediterranean Restaurant Andheri East"
                 className="w-full h-full object-cover"
               />
@@ -99,8 +99,8 @@ export default function AboutPage() {
 
       {/* Decorative Strip */}
       <section className="h-[40vh] md:h-[60vh] relative overflow-hidden">
-        <img
-          src="/lounge/DSC03306.jpg"
+        <img loading="lazy" decoding="async"
+          src="/lounge/DSC03306.webp"
           className="w-full h-full object-cover fixed top-0 left-0 -z-10"
           alt="OPA Lounge Ambience Andheri East"
         />
@@ -230,7 +230,7 @@ export default function AboutPage() {
               transition={{ duration: 1 }}
               className="order-1 md:order-2 relative rounded-[3rem] overflow-hidden aspect-[4/5] shadow-2xl"
             >
-              <img
+              <img loading="lazy" decoding="async"
                 src="/food/30 TEN --2.webp"
                 alt="Mediterranean Lebanese Arabic Turkish Food Restaurant Andheri East Mumbai"
                 className="w-full h-full object-cover"

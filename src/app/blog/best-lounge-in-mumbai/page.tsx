@@ -84,8 +84,8 @@ export default function BlogBestLoungeMumbaiPage() {
 
         {/* Hero */}
         <section className="relative min-h-[70vh] flex items-end pb-20 md:pb-28 overflow-hidden bg-oasis-umber">
-          <img
-            src="/lounge/DSC03306.jpg"
+          <img loading="lazy" decoding="async"
+            src="/lounge/DSC03306.webp"
             alt="Best Lounge in Mumbai — OPA Bar & Cafe"
             className="absolute inset-0 w-full h-full object-cover opacity-45"
           />

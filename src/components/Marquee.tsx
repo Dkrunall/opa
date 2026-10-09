@@ -30,9 +30,11 @@ export function Marquee({ text = "MENU" }: { text?: string }) {
       <div ref={sliderRef} className="flex space-x-12 md:space-x-24 items-center will-change-transform">
         {[...Array(15)].map((_, i) => (
           <div key={i} className="flex items-center space-x-12 md:space-x-24">
-            <span className="text-3xl md:text-5xl lg:text-8xl font-stylized text-oasis-umber opacity-20">
-              {text}
-            </span>
+            <span
+              aria-hidden="true"
+              data-text={text}
+              className="text-3xl md:text-5xl lg:text-8xl font-stylized text-oasis-umber opacity-20 before:content-[attr(data-text)]"
+            />
             <div className="w-3 h-3 md:w-4 md:h-4 rounded-full bg-oasis-accent/20" />
           </div>
         ))}

@@ -44,7 +44,7 @@ export function Navbar() {
               whileHover={{ scale: 1.05 }}
               className="px-6 py-3 bg-oasis-umber/25 backdrop-blur-2xl border border-white/10 rounded-full flex items-center justify-center transition-all duration-700 shadow-xl"
             >
-              <img src="/logo.png" alt="OPA Logo" className="h-6 md:h-8 w-auto object-contain brightness-0 invert" />
+              <img src="/logo.png" width={1119} height={806} alt="OPA Logo" className="h-6 md:h-8 w-auto object-contain brightness-0 invert" />
             </motion.div>
           </Link>
         </div>

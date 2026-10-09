@@ -85,7 +85,7 @@ export default function BlogBestLitCocktailsAndheriPage() {
 
         {/* Hero */}
         <section className="relative min-h-[70vh] flex items-end pb-20 md:pb-28 overflow-hidden bg-oasis-umber">
-          <img
+          <img loading="lazy" decoding="async"
             src="/images/bar.webp"
             alt="Best LIT Cocktails in Andheri — Opa! Bar & Cafe"
             className="absolute inset-0 w-full h-full object-cover opacity-45"

@@ -26,9 +26,11 @@ export function Footer() {
     >
       {/* Large Background Logo Polish */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none select-none">
-        <h2 className="text-[20vw] font-stylized text-oasis-umber/[0.03] leading-none tracking-tighter">
-          OPA
-        </h2>
+        <div
+          aria-hidden="true"
+          data-text="OPA"
+          className="text-[20vw] font-stylized text-oasis-umber/[0.03] leading-none tracking-tighter before:content-[attr(data-text)]"
+        />
       </div>
 
       <div className="container mx-auto px-6">
@@ -49,7 +51,7 @@ export function Footer() {
             <div className="lg:col-span-3 space-y-12">
               <div className="space-y-4">
                  <Link href="/" className="block w-48 h-24">
-                  <img src="/logo.png" alt="OPA Logo" className="w-full h-full object-contain object-left brightness-0 invert" />
+                  <img loading="lazy" decoding="async" src="/logo.png" alt="OPA Logo" className="w-full h-full object-contain object-left brightness-0 invert" />
                 </Link>
                 <div className="w-20 h-[1px] bg-oasis-accent/30" />
               </div>
@@ -73,7 +75,7 @@ export function Footer() {
 
             <div className="lg:col-span-2 space-y-12">
                <div className="space-y-8">
-                <h4 className="text-sand-light uppercase tracking-[0.4em] text-[10px] font-bold opacity-40">Direct Contact</h4>
+                <h3 className="text-sand-light uppercase tracking-[0.4em] text-[10px] font-bold opacity-40">Direct Contact</h3>
                 
                 <div className="space-y-8">
                   <div className="group/item">
