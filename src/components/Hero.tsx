@@ -12,25 +12,28 @@ export function Hero() {
   const bgRef = useRef<HTMLDivElement>(null);
   const [loadVideo, setLoadVideo] = useState(false);
 
-  // Defer the background video until the page has finished loading so it never competes with first paint
-  useEffect(() => {
-    if (document.readyState === "complete") {
-      setLoadVideo(true);
-      return;
-    }
-    const onLoad = () => setLoadVideo(true);
-    window.addEventListener("load", onLoad);
-    return () => window.removeEventListener("load", onLoad);
-  }, []);
-  
   // Mouse perspective effect
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
   const springX = useSpring(mouseX, { stiffness: 100, damping: 30 });
   const springY = useSpring(mouseY, { stiffness: 100, damping: 30 });
-  
+
   const rotateX = useTransform(springY, [-300, 300], [10, -10]);
   const rotateY = useTransform(springX, [-300, 300], [-10, 10]);
+
+  // Start the background video well after first paint so it never competes with LCP
+  useEffect(() => {
+    let timer: ReturnType<typeof setTimeout>;
+    const start = () => {
+      timer = setTimeout(() => setLoadVideo(true), 1500);
+    };
+    if (document.readyState === "complete") start();
+    else window.addEventListener("load", start, { once: true });
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("load", start);
+    };
+  }, []);
 
   useEffect(() => {
     gsap.to(bgRef.current, {
@@ -96,18 +99,13 @@ export function Hero() {
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 pt-20">
         <div className="mb-6 md:mb-12 invisible h-8 md:h-16 lg:h-24" aria-hidden="true" />
 
-        <motion.div
-          initial={{ scale: 0.95 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          className="space-y-6"
-        >
+        <div className="space-y-6 hero-reveal">
           <h1 className="text-4xl md:text-8xl font-stylized text-sand-light tracking-[0.4em] mb-4 drop-shadow-2xl">
             The Oasis Sanctuary
           </h1>
           <div className="w-24 h-[1px] bg-oasis-gold mx-auto"></div>
           <p className="text-[10px] uppercase tracking-[1em] text-sand-light font-bold drop-shadow-md">Where Time Dissolves into Rhythm</p>
-        </motion.div>
+        </div>
       </div>
 
       {/* Premium Scroll Indicator */}
