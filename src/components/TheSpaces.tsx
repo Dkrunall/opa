@@ -59,6 +59,7 @@ export function TheSpaces() {
                 src={venue.image}
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
+                quality={60}
                 className="object-cover transition-transform duration-[2s] group-hover:scale-110 opacity-60 grayscale hover:grayscale-0 transition-all"
                 alt={venue.name}
               />

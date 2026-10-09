@@ -52,7 +52,7 @@ export function Footer() {
             <div className="lg:col-span-3 space-y-12">
               <div className="space-y-4">
                  <Link href="/" className="block relative w-48 h-24">
-                  <Image src="/logo.png" alt="OPA Logo" fill sizes="192px" className="object-contain object-left brightness-0 invert" />
+                  <Image src="/logo-sm.webp" alt="OPA Logo" fill unoptimized className="object-contain object-left brightness-0 invert" />
                 </Link>
                 <div className="w-20 h-[1px] bg-oasis-accent/30" />
               </div>

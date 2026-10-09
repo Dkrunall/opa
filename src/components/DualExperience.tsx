@@ -54,6 +54,7 @@ export function DualExperience() {
               alt="Fine Dining at OPA"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
+              quality={60}
               className="object-cover transition-transform duration-[2.5s] group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-oasis-umber/95 via-oasis-umber/50 to-oasis-umber/10" />
@@ -101,6 +102,7 @@ export function DualExperience() {
               alt="Night Life at OPA"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
+              quality={60}
               className="object-cover transition-transform duration-[2.5s] group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-black/10" />
