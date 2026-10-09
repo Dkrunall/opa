@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Users, GlassWater, Coffee } from "lucide-react";
 
 const venues = [
@@ -54,9 +55,11 @@ export function TheSpaces() {
               `}
             >
               {/* Background with Zoom */}
-              <img loading="lazy" decoding="async" 
-                src={venue.image} 
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110 opacity-60 grayscale hover:grayscale-0 transition-all"
+              <Image
+                src={venue.image}
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover transition-transform duration-[2s] group-hover:scale-110 opacity-60 grayscale hover:grayscale-0 transition-all"
                 alt={venue.name}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-oasis-umber via-oasis-umber/40 to-transparent opacity-90" />

@@ -2,14 +2,16 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Introduction } from "@/components/About";
-import { Marquee } from "@/components/Marquee";
-import { DualExperience } from "@/components/DualExperience";
-import { TheSpaces } from "@/components/TheSpaces";
-import { IconicVenue } from "@/components/IconicVenue";
-import { SocialGallery } from "@/components/SocialGallery";
-import { GreatArch } from "@/components/GreatArch";
-import { Footer } from "@/components/Footer";
 import { StickyActions } from "@/components/StickyActions";
+import dynamic from "next/dynamic";
+
+const Marquee = dynamic(() => import("@/components/Marquee").then((m) => m.Marquee));
+const DualExperience = dynamic(() => import("@/components/DualExperience").then((m) => m.DualExperience));
+const TheSpaces = dynamic(() => import("@/components/TheSpaces").then((m) => m.TheSpaces));
+const IconicVenue = dynamic(() => import("@/components/IconicVenue").then((m) => m.IconicVenue));
+const SocialGallery = dynamic(() => import("@/components/SocialGallery").then((m) => m.SocialGallery));
+const GreatArch = dynamic(() => import("@/components/GreatArch").then((m) => m.GreatArch));
+const Footer = dynamic(() => import("@/components/Footer").then((m) => m.Footer));
 
 export const metadata: Metadata = {
   title: "Best Bar in Andheri | Opa Bar & Cafe Drinks & Vibes",

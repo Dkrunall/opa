@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import Image from "next/image";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
 
@@ -92,7 +93,7 @@ export function Hero() {
         style={{ y: y2 }}
         className="absolute -bottom-20 -left-20 w-[40vw] aspect-square z-20 pointer-events-none opacity-20 grayscale"
       >
-         <img loading="lazy" decoding="async" src="/images/ambience.webp" className="w-full h-full object-cover rounded-full mix-blend-multiply blur-3xl" alt="" />
+         <Image src="/images/ambience.webp" fill sizes="40vw" quality={40} className="object-cover rounded-full mix-blend-multiply blur-3xl" alt="" />
       </motion.div>
 
       {/* Hero Content */}

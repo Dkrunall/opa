@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const fineDineHighlights = [
   "Gourmet Feast",
@@ -48,10 +49,12 @@ export function DualExperience() {
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
             className="relative group rounded-[2rem] md:rounded-[2.5rem] overflow-hidden min-h-[420px] md:min-h-[580px] lg:min-h-[640px] cursor-pointer"
           >
-            <img loading="lazy" decoding="async"
+            <Image
               src="/food/30 TEN -08232.webp"
               alt="Fine Dining at OPA"
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2.5s] group-hover:scale-105"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover transition-transform duration-[2.5s] group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-oasis-umber/95 via-oasis-umber/50 to-oasis-umber/10" />
 
@@ -93,10 +96,12 @@ export function DualExperience() {
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.12 }}
             className="relative group rounded-[2rem] md:rounded-[2.5rem] overflow-hidden min-h-[420px] md:min-h-[580px] lg:min-h-[640px] cursor-pointer"
           >
-            <img loading="lazy" decoding="async"
+            <Image
               src="/lounge/DSC03298.webp"
               alt="Night Life at OPA"
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2.5s] group-hover:scale-105"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover transition-transform duration-[2.5s] group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-black/10" />
 

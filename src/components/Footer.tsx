@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useMotionValue } from "framer-motion";
 
 export function Footer() {
@@ -50,8 +51,8 @@ export function Footer() {
           <div className="relative z-10 grid lg:grid-cols-5 gap-16">
             <div className="lg:col-span-3 space-y-12">
               <div className="space-y-4">
-                 <Link href="/" className="block w-48 h-24">
-                  <img loading="lazy" decoding="async" src="/logo.png" alt="OPA Logo" className="w-full h-full object-contain object-left brightness-0 invert" />
+                 <Link href="/" className="block relative w-48 h-24">
+                  <Image src="/logo.png" alt="OPA Logo" fill sizes="192px" className="object-contain object-left brightness-0 invert" />
                 </Link>
                 <div className="w-20 h-[1px] bg-oasis-accent/30" />
               </div>
